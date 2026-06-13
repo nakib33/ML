@@ -45,17 +45,42 @@ sigma(z) = 1 / (1 + e^-z)
 # 3. Sigmoid Function
 
 ## Definition
-Converts any real number into a value between 0 and 1.
 
-## Equation
-sigma(x) = 1 / (1 + e^-x)
+The **sigmoid function** is an activation function used in neural networks to convert any number into a value between **0 and 1**.
 
-## Examples
-x=0 -> 0.5
-x=10 -> ~1
-x=-10 -> ~0
+**Equation:**
 
----
+\sigma(x)=\frac{1}{1+e^{-x}}
+
+### Simple Explanation
+
+* **x** = input value
+* **e** ≈ 2.718 (a mathematical constant)
+* **σ(x)** = output of the sigmoid function
+
+### Examples
+
+* If **x = 0**, output = **0.5**
+* If **x = 10**, output ≈ **1**
+* If **x = -10**, output ≈ **0**
+
+### Why it is used
+
+It acts like a probability:
+
+* Output close to **1** → Yes / True
+* Output close to **0** → No / False
+
+### Shape
+
+The sigmoid curve looks like an **S-shape**:
+
+* Large negative input → near 0
+* Input around 0 → around 0.5
+* Large positive input → near 1
+
+So, the sigmoid function takes any input and smoothly squeezes it into the range **0 to 1**.
+
 
 # 4. Euler Number
 e ≈ 2.71828
