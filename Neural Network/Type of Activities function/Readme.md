@@ -139,7 +139,7 @@ The Leaky ReLU activation function is a variant of ReLU that allows a small, non
 
 ## Step Function
 
-![Step Function)](14.png)
+![Step Function)](14.jpeg)
 
 The step function (also called binary step or threshold function) outputs a binary value based on whether the input crosses a threshold. Typically, it outputs 0 for inputs less than 0 and 1 for inputs greater than or equal to 0. The brain analogy is an “all-or-nothing decision” – like a light switch that is either completely on or completely off. A real‑life example is “Will I take an umbrella?” – if the chance of rain is above a threshold (say 50%), answer yes; otherwise, no. The step function was historically used in the perceptron model but is rarely used in modern deep learning because its derivative is zero almost everywhere, making gradient-based learning impossible. When used, it appears at the output layer for strict binary classification.
 
@@ -147,7 +147,7 @@ The step function (also called binary step or threshold function) outputs a bina
 
 ## How to Choose the Right Activation Function?
 
-![Right Activation Function)](15.png)
+![Right Activation Function)](15.jpeg)
 
 Choosing the correct activation function depends primarily on your output layer and the type of prediction problem. For regression problems (predicting a continuous value like house price or temperature), use the Linear activation function because the output can be any real number. For binary classification (yes/no, spam/not spam), use the Sigmoid (Logistic) activation function – it outputs a probability between 0 and 1. For multi-class classification (one class among many, e.g., digit recognition 0-9), use the Softmax activation function – it outputs a probability distribution summing to 1. For multilabel classification (multiple independent yes/no outputs, e.g., tagging multiple objects in an image), use Sigmoid independently for each output node because each label is a separate binary decision. These rules apply specifically to the output layer. For hidden layers, ReLU and its variants are generally preferred.
 
@@ -162,7 +162,7 @@ Choosing the correct activation function depends primarily on your output layer 
 
 ## How to Choose the Right Activation Function?
 
-![Right Activation Function)](16.png)
+![Right Activation Function)](16.jpeg)
 
 The choice of activation function for hidden layers depends on the type of neural network architecture. For Convolutional Neural Networks (CNNs) – used for image processing and computer vision – the ReLU activation function is the standard choice. ReLU is fast, helps mitigate vanishing gradients, and introduces sparsity. For Recurrent Neural Networks (RNNs) – used for sequential data like time series, text, and speech – the Tanh and/or Sigmoid activation functions are commonly used. Tanh provides a zero‑centered output (good for capturing positive/negative states), while Sigmoid acts as a gating mechanism (e.g., in LSTM networks). These choices are general guidelines; modern variants like Leaky ReLU or ELU may also be used in CNNs, and Tanh remains popular in RNNs.
 
