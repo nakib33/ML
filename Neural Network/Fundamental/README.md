@@ -251,7 +251,7 @@ Meaning: 96.5% probability
 Inputs → Weighted Sum → Activation → Output
 
 ---
-#**10. logistic regression can be viewed as the simplest form of a neural network.**
+# **10. logistic regression can be viewed as the simplest form of a neural network.**
 **Why?**
 
 A single neuron performs:
