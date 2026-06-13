@@ -185,19 +185,31 @@ Sigmoid = probability generator (0 to 1)
 
 ![Neuron Worksflow](3.png)
 
-MLP is a neural network that contains multiple layers of perceptrons.
+A Multilayer Perceptron (MLP) is an artificial neural network that consists of at least three layers: an input layer, one or more hidden layers,and an output layer.
 
 ---
+## Components of an MLP 
+
+**Input Layer:** Receives the input data. Each node in this layer corresponds 
+to a feature in the input dataset. 
+
+**Hidden Layer(s):** One or more layers where computations and learning occur. Each neuron in a hidden layer applies an activation function to the weighted sum of inputs. 
+
+**Output Layer:** Produces the final result or prediction. 
 
 ## 🧱 Structure
 
-### 🔹 Input Layer
+**Feedforward:** The data flows in one direction from the input layer through the hidden layers to the output layer. There is no cycle or loop in the network. 
+
+**Fully Connected:** Each neuron in one layer is connected to every neuron in the next layer.
+
+**🔹 Input Layer**
 Receives raw features
 
-### 🔹 Hidden Layers
+**🔹 Hidden Layers**
 Performs feature learning
 
-### 🔹 Output Layer
+**🔹 Output Layer**
 Gives final prediction
 
 ---
